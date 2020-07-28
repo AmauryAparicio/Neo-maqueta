@@ -1,0 +1,30 @@
+.footer {
+  height: 10vh;
+  background: $color-grey-dark-3;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+  &__menu {
+    display: inline-block;
+    width: fit-content;
+    margin: 2rem 0 1rem 0;
+  }
+
+  &__link {
+    color: $color-grey-dark-2;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    transition: .3s all;
+
+    &:hover {
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    color: $color-grey-dark;
+  }
+}

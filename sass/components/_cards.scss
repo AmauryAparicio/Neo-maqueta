@@ -1,0 +1,54 @@
+.card {
+  width: 100%;
+  height: 28rem;
+  border: 2px solid $color-grey-dark;
+  border-radius: 3px;
+  transition: .3s all;
+  background-color: $color-white;
+  box-shadow: 1px 2px 3px rgba($color-black, .8);
+
+  &:hover {
+    border-color: $color-primary-dark;
+    box-shadow: 2px 4px 4px rgba($color-black, .8);
+    transform: scale(1.1);
+  }
+
+  &:hover &__button {
+    background-color: $color-primary-dark;
+    color: $color-black;
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 2rem 2rem 0 2rem;
+    height: 20%;
+  }
+
+  &__price {
+    font-size: 2rem;
+    height: 10%;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid $color-black;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $color-grey-dark;
+    transition: .3s all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 0 0 .8rem 0;
+    height: 20%;
+  }
+}

@@ -1,0 +1,9 @@
+.store-index {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}

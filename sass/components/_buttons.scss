@@ -1,0 +1,60 @@
+.btn {
+  display: inline-block;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: .3s all;
+
+  &--dark {
+    background-color: $color-grey-dark-2;
+    color: $color-grey-light-2;
+    border: 1px solid $color-grey-dark-3;
+
+    &:hover {
+      background-color: $color-grey-dark-3;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary-light;
+    color: $color-grey-light-2;
+
+    &:hover {
+      background-color: $color-secondary-dark;
+      transform: scale(1.1);
+    }
+  }
+
+  &__group {
+    display: inline-block;
+    padding: 1.2rem;
+
+    @include respond(phone) {
+      padding: 1.2rem 0;
+    }
+
+    &>.btn:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &>.btn:not(:last-child) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 1px solid transparent;
+    }
+
+    &>.btn {
+      float: left;
+    }
+  }
+
+  &--small {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+}
